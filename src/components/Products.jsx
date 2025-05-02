@@ -48,6 +48,11 @@ export default function Products({ slug, rating, price }) {
             )
         }, [slug, limit, rating, price]
     )
+    useEffect(
+        ()=>{
+            setLoading(true)
+        },[]
+    )
     return (
         <>
             <h1 className='m-4 font-bold'>Total Products: {allProducts.length}</h1>

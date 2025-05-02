@@ -20,34 +20,30 @@ export default function Header() {
     }, [user, location.pathname]
   )
 
-  // useEffect(
-  //   () => {
-  //     if (user != !user ){
-
-  //     }
-  //   },[]
-  // )
 
   return (
-    <header className="bg-gray-900 text-white p-4 shadow-md">
+    <header className=" p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold">BrandName</h1>
+        <div>
+        <h1 className="text-2xl text-black font-bold">ULTRAS.</h1>
+        <span className='text-sm text-gray-500'>Casual Wear Store</span>
+        </div>
 
         <nav>
-          <ul className="flex space-x-6">
+          <ul className="flex gap-6 space-x-6">
             <li>
               <Link to={'/'}>
-                <span href="#" className="hover:text-gray-400">Home</span>
+                <span href="#" className="hover:text-gray-400 text-xl">Home</span>
               </Link>
             </li>
             <li>
               <Link to={'/about'}>
-                <span href="#" className="hover:text-gray-400">About</span>
+                <span href="#" className="hover:text-gray-400 text-xl">About</span>
               </Link>
             </li>
             <li>
               <Link to={'/shop'}>
-                <span href="#" className="hover:text-gray-400">Shop</span>
+                <span href="#" className="hover:text-gray-400 text-xl">Shop</span>
               </Link>
             </li>
           </ul>
@@ -56,10 +52,10 @@ export default function Header() {
         <div className="flex space-x-4">
           <Link to={'/cart'}>
             <button className="relative mr-1">
-              <span className="text-xl">🛒</span>
+              <span className="text-2xl mt-6">🛒</span>
               <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full px-2">{cart.length}</span>
             </button></Link>
-          <button onClick={() => setCart([])} className="bg-red-600 px-4 py-2 rounded hover:bg-red-700">Clear Cart</button>
+          <button onClick={() => setCart([])} className="bg-red-600 px-4 py-2 rounded text-white hover:bg-red-700">Clear Cart</button>
           {
             !user
               ?
