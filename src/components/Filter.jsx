@@ -36,16 +36,16 @@ export default function Filter({ slug, rating, setRating, price, setPrice }) {
         <div>
             <div className='p-1 mb-4'>
                 <h1 className='text-2xl '>Filter by Rating</h1>
-                <div onClick={() => setRating(4)} className={`border rounded-md my-4 p-2 px-3 flex gap-1 ${rating == 4 ? "bg-blue-600 text-white" : ""}`}>
+                <div onClick={() => setRating(4)} className={`border rounded-md my-4 p-2 px-3 flex gap-1 ${rating == 4 ? "bg-blue-950 text-white" : ""}`}>
                     4<span><FaStar className='text-yellow-300 mt-1' /></span>& above
                 </div>
-                <div onClick={() => setRating(3)} className={`border rounded-md mt-4 p-2 px-3 flex gap-1 ${rating == 3 ? "bg-blue-600 text-white" : ""}`}>
+                <div onClick={() => setRating(3)} className={`border rounded-md mt-4 p-2 px-3 flex gap-1 ${rating == 3 ? "bg-blue-950 text-white" : ""}`}>
                     3<span><FaStar className='text-yellow-300 mt-1' /></span>& above
                 </div>
-                <div onClick={() => setRating(2)} className={`border rounded-md mt-4 p-2 px-3 flex gap-1 ${rating == 2 ? "bg-blue-600 text-white" : ""}`}>
+                <div onClick={() => setRating(2)} className={`border rounded-md mt-4 p-2 px-3 flex gap-1 ${rating == 2 ? "bg-blue-950 text-white" : ""}`}>
                     2<span><FaStar className='text-yellow-300 mt-1' /></span>& above
                 </div>
-                <div onClick={() => setRating(1)} className={`border rounded-md mt-4 p-2 px-3 flex gap-1 ${rating == 1 ? "bg-blue-600 text-white" : ""}`}>
+                <div onClick={() => setRating(1)} className={`border rounded-md mt-4 p-2 px-3 flex gap-1 ${rating == 1 ? "bg-blue-950 text-white" : ""}`}>
                     1<span><FaStar className='text-yellow-300 mt-1' /></span>& above
                 </div>
             </div>
@@ -62,7 +62,7 @@ export default function Filter({ slug, rating, setRating, price, setPrice }) {
             <div className='p-1'>
                 <h1 className='text-2xl '>Filter by Category</h1>
                 <Link to={'/shop'}>
-                    <div className={`border rounded-md mt-4 p-2 px-3 ${slug == undefined ? "bg-blue-600 text-white" : ""}`}>
+                    <div className={`border rounded-md mt-4 p-2 px-3 ${slug == undefined ? "bg-blue-950 text-white" : ""}`}>
                         All Categories
                     </div>
                 </Link>
@@ -71,7 +71,7 @@ export default function Filter({ slug, rating, setRating, price, setPrice }) {
                         (categoryName, categoryIndex) => {
                             return (
                                 <Link to={`/shop/${categoryName.slug}`}>
-                                    <div className={`border rounded-md mt-2 p-2 px-3 ${categoryName.slug == slug ? "bg-blue-600 text-white" : ""}`}>
+                                    <div className={`border rounded-md mt-2 p-2 px-3 ${categoryName.slug == slug ? "bg-blue-950 text-white" : ""}`}>
                                         {categoryName.name}
                                     </div>
                                 </Link>

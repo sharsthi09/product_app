@@ -53,9 +53,9 @@ export default function Home() {
   useEffect(() => {
     // Initialize AOS with duration and trigger every time
     AOS.init({
-      duration: 700,   // Animation duration (in ms)
+      duration:800,   // Animation duration (in ms)
       once: false,     // Set to false to trigger the animation every time the element is in view
-      offset: 200,     // Optional: Distance from the bottom of the viewport before triggering
+      offset: 100,     // Optional: Distance from the bottom of the viewport before triggering
     });
 
     // AOS refresh for dynamic content

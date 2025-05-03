@@ -60,7 +60,7 @@ export default function Header() {
             !user
               ?
               <Link to={'/login'}>
-                <button className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Login</button>
+                <button className="bg-blue-600 px-4 py-2 text-white rounded hover:bg-blue-700">Login</button>
               </Link>
               :
               <button onClick={logoutUser} className="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700">Logout</button>

@@ -80,7 +80,7 @@ export default function Products({ slug, rating, price }) {
                 }
             </div>
             <div className='text-center mt-6'>
-                <button className="bg-blue-600 text-white px-4 py-2 rounded-lg mt-5" onClick={() => setLimit(limit + 20)}>Load More</button>
+                <button className="bg-blue-950 text-white px-4 py-2 rounded-lg mt-5" onClick={() => setLimit(limit + 20)}>Load More</button>
             </div>
         </>
     )
@@ -122,7 +122,7 @@ function Cards({ productData, cart, setCart, productIndex, toast }) {
                     </div>
                 </div>
             </Link>
-            <button onClick={addToCart} className="bg-blue-600 text-white px-4 py-2 rounded-lg mt-5 m-4">Add to Cart</button>
+            <button onClick={addToCart} className="bg-blue-950 text-white px-4 py-2 rounded-lg mt-5 m-4">Add to Cart</button>
         </div>
     )
 }

@@ -58,7 +58,7 @@ export default function Cart() {
                     <p>Total</p>
                     <p>${(total - (total * 10 / 100)).toFixed(2)}</p>
                 </div>
-                <button className="mt-4 w-full bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700">
+                <button className="mt-4 w-full bg-blue-950 text-white px-6 py-2 rounded-md hover:bg-blue-900">
                     Checkout
                 </button>
             </div>
